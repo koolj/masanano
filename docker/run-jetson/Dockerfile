@@ -38,9 +38,9 @@ RUN apt-get install -y nodejs
 # date > marker && sudo docker build -t opendatacam .
 COPY marker /dev/null
 
-RUN git clone --depth 1 -b v2.1.0 https://github.com/opendatacam/opendatacam /opendatacam
+RUN git clone --depth 1 -b v0.9 https://github.com/koolj/masanano.git /masanano
 
-WORKDIR /opendatacam
+WORKDIR /masanano
 
 RUN npm install
 RUN npm run build
@@ -58,6 +58,6 @@ EXPOSE 8080 8070 8090 27017
 
 # # Because we want to run mongodb and the node.js app
 # # See https://docs.docker.com/config/containers/multi-service_container/
-COPY docker-start-mongo-and-opendatacam.sh docker-start-mongo-and-opendatacam.sh
-RUN chmod 777 docker-start-mongo-and-opendatacam.sh
-CMD ./docker-start-mongo-and-opendatacam.sh
+COPY docker-start-mongo-and-masanano.sh docker-start-mongo-and-masanano.sh
+RUN chmod 777 docker-start-mongo-and-masanano.sh
+CMD ./docker-start-mongo-and-masanano.sh
