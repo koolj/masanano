@@ -1,6 +1,6 @@
 {
   "name": "masanano",
-  "version": "0.9.1",
+  "version": "*",
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
