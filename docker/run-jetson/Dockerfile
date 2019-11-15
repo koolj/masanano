@@ -36,9 +36,9 @@ RUN apt-get install -y nodejs
 # Technique to rebuild the docker file from here : https://stackoverflow.com/a/49831094/1228937
 # Build using date > marker && docker build .
 # date > marker && sudo docker build -t opendatacam .
-COPY marker /dev/null
+#COPY marker /dev/null
 
-RUN git clone --depth 1 -b v0.9 https://github.com/koolj/masanano.git /masanano
+RUN git clone --depth 1 https://github.com/koolj/masanano.git /masanano
 
 WORKDIR /masanano
 
