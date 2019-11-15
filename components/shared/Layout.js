@@ -14,8 +14,8 @@ class Layout extends Component {
             content='width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1,user-scalable=0,initial-scale=1'
           />
           <script type="text/javascript" src="/static/js/fabric.min.js" />
-          <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-          <link rel="icon" href="favicon.ico" type="image/x-icon">
+          <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+          <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
         </Head>
         {this.props.children}
       </div>

@@ -34,10 +34,12 @@ class InitializingView extends Component {
     return (
       <div className="initializing-view pt-20 pb-20 pr-12 pl-12">
         {!this.props.requestedFileRecording &&
-          <div style = "position: relative;display: flex;justify-content:space-between;">
-              <img src="ml_s2.png" alt="logo" style="max-width: 100%" >
+          <div>
+            <div style = "position: relative;display: flex;justify-content:space-between;">
+                <img src="/static/ml_s2.png" alt="logo" style="max-width: 100%" >
+            </div>
+            <h2 className="text-grey text-3xl font-bold">Initializing Miraway MasaNano</h2>
           </div>
-          <h2 className="text-grey text-3xl font-bold">Initializing Miraway MasaNano</h2>
         }
         {this.props.requestedFileRecording &&
           <h2 className="text-white text-3xl font-bold">Restarting to process video file {this.props.fileName.split("/").pop()}</h2>
