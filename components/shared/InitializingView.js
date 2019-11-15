@@ -36,7 +36,7 @@ class InitializingView extends Component {
         {!this.props.requestedFileRecording &&
           <div>
             <div style = "position: relative;display: flex;justify-content:space-between;">
-                <img src="/static/ml_s2.png" alt="logo" style="max-width: 100%" >
+                <img src="/static/ml_s2.png" alt="logo" style="max-width: 100%" />
             </div>
             <h2 className="text-grey text-3xl font-bold">Initializing Miraway MasaNano</h2>
           </div>
